@@ -34,7 +34,7 @@ A real-time collaborative code editor built with React, Django, Monaco Editor, a
 
 1. Make sure Docker and Docker Compose are installed
 2. Run the setup:
-   `ash
+   `bash
    docker-compose up --build
    `
 3. Access the application:
