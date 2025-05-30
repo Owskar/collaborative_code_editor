@@ -91,36 +91,64 @@ npm start
 `ash
 redis-server
 `
-
 ## Project Structure
 
-`
+```
 collaborative-editor/
+├── .gitignore
 ├── backend/
-│   ├── collab_editor/          # Django project settings
-│   ├── editor/                 # Main Django app
-│   │   ├── models.py          # Document and Collaborator models
-│   │   ├── views.py           # REST API views
-│   │   ├── consumers.py       # WebSocket consumers for Yjs sync
-│   │   ├── routing.py         # WebSocket routing
-│   │   └── serializers.py     # API serializers
+│   ├── .env
+│   ├── collab_editor/
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── db.sqlite3
+│   ├── Dockerfile
+│   ├── editor/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── consumers.py
+│   │   ├── migrations/
+│   │   │   ├── __init__.py
+│   │   │   └── 0001_initial.py
+│   │   ├── models.py
+│   │   ├── routing.py
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   ├── manage.py
 │   ├── requirements.txt
-│   └── manage.py
+│   └── staticfiles/
+├── docker-compose.yml
 ├── frontend/
+│   ├── Dockerfile
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── public/
+│   │   └── index.html
 │   ├── src/
-│   │   ├── components/        # React components
+│   │   ├── App.js
+│   │   ├── components/
 │   │   │   ├── CollaborativeEditor.js
+│   │   │   ├── CollaboratorsList.js
 │   │   │   ├── DocumentList.js
 │   │   │   ├── Header.js
-│   │   │   ├── CollaboratorsList.js
 │   │   │   └── LanguageSelector.js
-│   │   ├── services/          # API services
-│   │   ├── hooks/             # Custom React hooks
-│   │   └── App.js
-│   ├── package.json
+│   │   ├── hooks/
+│   │   │   └── useYjs.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   └── services/
+│   │   │   └── api.js
 │   └── tailwind.config.js
-└── docker-compose.yml
-`
+├── README.md
+└── test.rest
+```
+
 
 ## Usage
 
