@@ -240,24 +240,12 @@ npm run lint
 4. Push to the branch (git push origin feature/amazing-feature)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [Monaco Editor](https://microsoft.github.io/monaco-editor/) for the code editor
-- [Yjs](https://yjs.dev/) for conflict-free collaborative editing
-- [Django Channels](https://channels.readthedocs.io/) for WebSocket support
-- [React](https://reactjs.org/) for the frontend framework
-
 ## Support
 
 If you encounter any issues or have questions:
 
 1. Check the [Issues](https://github.com/owskar/collaborative-code-editor/issues) page
 2. Create a new issue with detailed information
-3. Join our [Discord community](https://discord.gg/your-invite-code)
 
 ## Roadmap
 
