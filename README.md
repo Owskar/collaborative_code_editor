@@ -34,7 +34,7 @@ A real-time collaborative code editor built with React, Django, Monaco Editor, a
 
 1. Make sure Docker and Docker Compose are installed
 2. Run the setup:
-   `bash
+   `
    docker-compose up --build
    `
 3. Access the application:
@@ -50,7 +50,7 @@ A real-time collaborative code editor built with React, Django, Monaco Editor, a
 - Redis server
 
 #### Backend Setup
-`bash
+`
 cd backend
 
 # Create virtual environment
@@ -77,7 +77,7 @@ python manage.py runserver
 `
 
 #### Frontend Setup
-`bash
+`
 cd frontend
 
 # Install dependencies
@@ -88,7 +88,7 @@ npm start
 `
 
 #### Start Redis
-`bash
+`
 redis-server
 `
 ## Project Structure
@@ -204,13 +204,13 @@ CORS_ALLOWED_ORIGINS=http://localhost:3000,https://your-domain.com
 ### Running Tests
 
 Backend tests:
-`bash
+`
 cd backend
 python manage.py test
 `
 
 Frontend tests:
-`bash
+`
 cd frontend
 npm test
 `
@@ -218,7 +218,7 @@ npm test
 ### Code Style
 
 Backend (Python):
-`bash
+`
 # Install development dependencies
 pip install black flake8 isort
 
@@ -231,7 +231,7 @@ flake8 .
 `
 
 Frontend (JavaScript):
-`bash
+`
 # Install development dependencies
 npm install --save-dev prettier eslint
 
@@ -248,7 +248,7 @@ npm run lint
 
 1. Update environment variables in .env.docker
 2. Build and run production containers:
-   `bash
+   `
    docker-compose -f docker-compose.prod.yml up --build -d
    `
 
