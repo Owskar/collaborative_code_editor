@@ -50,7 +50,7 @@ A real-time collaborative code editor built with React, Django, Monaco Editor, a
 - Redis server
 
 #### Backend Setup
-`ash
+`bash
 cd backend
 
 # Create virtual environment
@@ -77,7 +77,7 @@ python manage.py runserver
 `
 
 #### Frontend Setup
-`ash
+`bash
 cd frontend
 
 # Install dependencies
@@ -88,7 +88,7 @@ npm start
 `
 
 #### Start Redis
-`ash
+`bash
 redis-server
 `
 ## Project Structure
@@ -177,7 +177,7 @@ collaborative-editor/
 
 Create a .env file in the backend directory:
 
-`nv
+`env
 DEBUG=True
 SECRET_KEY=your-secret-key-here
 REDIS_URL=redis://localhost:6379
@@ -190,7 +190,7 @@ CORS_ALLOWED_ORIGINS=http://localhost:3000
 
 For Docker deployment, create a .env.docker file:
 
-`nv
+`env
 DEBUG=False
 SECRET_KEY=your-production-secret-key
 REDIS_URL=redis://redis:6379
@@ -204,13 +204,13 @@ CORS_ALLOWED_ORIGINS=http://localhost:3000,https://your-domain.com
 ### Running Tests
 
 Backend tests:
-`ash
+`bash
 cd backend
 python manage.py test
 `
 
 Frontend tests:
-`ash
+`bash
 cd frontend
 npm test
 `
@@ -218,7 +218,7 @@ npm test
 ### Code Style
 
 Backend (Python):
-`ash
+`bash
 # Install development dependencies
 pip install black flake8 isort
 
@@ -231,7 +231,7 @@ flake8 .
 `
 
 Frontend (JavaScript):
-`ash
+`bash
 # Install development dependencies
 npm install --save-dev prettier eslint
 
@@ -248,7 +248,7 @@ npm run lint
 
 1. Update environment variables in .env.docker
 2. Build and run production containers:
-   `ash
+   `bash
    docker-compose -f docker-compose.prod.yml up --build -d
    `
 
