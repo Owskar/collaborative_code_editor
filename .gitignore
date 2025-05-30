@@ -1,0 +1,80 @@
+# === Node.js / React (frontend) ===
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Monaco Editor specific (tests, builds)
+monaco-editor/esm/vs/**/tests/
+
+# === Python Backend (FastAPI / Django Channels) ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.log
+.env
+.venv/
+venv/
+env/
+
+# Python dependency files
+Pipfile.lock
+poetry.lock
+
+# Database files
+*.sqlite3
+db.sqlite3
+
+# Django specific
+media/
+staticfiles/
+*.pot
+*.pyc
+
+# Redis dump files, if local Redis is running with persistence
+dump.rdb
+appendonly.aof
+
+# Yjs persistence / snapshots (if any)
+.yjs/
+yjs-data/
+
+# Docker (if used)
+docker-compose.override.yml
+*.local.yml
+
+# Coverage / testing
+coverage/
+htmlcov/
+.tox/
+.nox/
+*.cover
+*.coverage
+coverage.xml
+.pytest_cache/
+
+# Misc
+*.bak
+*.tmp
+*.log

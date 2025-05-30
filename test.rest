@@ -1,0 +1,25 @@
+### Login to get token
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Owskar@5125"
+}
+
+###
+
+# Use the token you get from login in this Authorization header!
+GET http://127.0.0.1:8000/api/documents/
+Authorization: Token 3ab3dbadbef0e29e28a3124063b21a420f467084
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/documents/
+Authorization: Token 3ab3dbadbef0e29e28a3124063b21a420f467084
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "another"
+}
