@@ -272,16 +272,6 @@ npm run lint
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/owskar/collaborative-code-editor/issues) page
+1. Check the [Issues](https://github.com/Owskar/collaborative-code-editor/issues) page
 2. Create a new issue with detailed information
 
-## Roadmap
-
-- [ ] User authentication and authorization
-- [ ] File upload and import functionality
-- [ ] Code execution and preview
-- [ ] Plugin system for custom extensions
-- [ ] Mobile responsive design
-- [ ] Offline support with sync
-- [ ] Integration with Git repositories
-- [ ] Advanced collaboration features (comments, suggestions)
