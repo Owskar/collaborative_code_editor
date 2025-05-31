@@ -272,6 +272,6 @@ npm run lint
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/Owskar/collaborative-code-editor/issues) page
+1. Check the [Issues](https://github.com/Owskar/collaborative_code_editor/issues) page
 2. Create a new issue with detailed information
 
